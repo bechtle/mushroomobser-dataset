@@ -54,7 +54,7 @@ To scrape the images from most recent year from [http://mushroomobserver.org](ht
 ```bash
 python download_images_of_year.py year destination_folder
 ```
-
+you may stop the script as soon as it starts scraping exclusively observations that are older then the desired year.
 
 ## create species dataset 
 
