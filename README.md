@@ -1,5 +1,5 @@
 # mushroomobser-dataset
-Dataset collected for the computer vision community from [http://mushroomobserver.org](http://mushroomobserver.org)
+Mushrooms images dataset collected from [http://mushroomobserver.org](http://mushroomobserver.org)
 
 # About the Dataset
 
