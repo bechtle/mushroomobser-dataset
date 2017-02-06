@@ -11,9 +11,8 @@ In addition to the full dataset, a "clean" dataset hast been created, the clean 
 
 The most recent year is always used as test dataset, all the other years as training dataset.
 
-The dataset collected can be downloaded [here](https://www.google.com).
-
-Additionally json files containing additional information about each image can be downloaded [here](https://www.google.com). The json files contain a list of dictionaries, each dictionary contains following information about the image, if image[thumbnail]=1 the image belongs to the clean dataset as well:
+The dataset collected can be downloaded [here](https://www.dropbox.com/sh/m1o91dwd1nto6w0/AABuDQVJWTq04lL_yaF_G2MFa?dl=0).
+Additionally json files containing additional information about each image can be downloaded from the above link as well. The json files contain a list of dictionaries, each dictionary contains following information about the image, if image[thumbnail]=1 the image belongs to the clean dataset:
 ```python
 {'date': '2006-05-21 07:17:22',
  'gbif_info': {'canonicalName': 'Xerocomells dryophils',
@@ -49,14 +48,14 @@ Additionally json files containing additional information about each image can b
 
 The file mushroom_taxonomy.pdf shows an overview of the taxonomy of the mushroom dataset.
 
-## scrape newest year for test
+## Scrape newest year for test
 To scrape the images from most recent year from [http://mushroomobserver.org](http://mushroomobserver.org) you can run scrape_images_of_year.py
 ```bash
 python download_images_of_year.py year destination_folder
 ```
 you may stop the script with ctrl+C as soon as it starts scraping exclusively observations that are older then the desired year. The script creates a json file with the image information.
 
-## create species dataset 
+## Create species dataset 
 
 To create a dataset containing n classes of only mushroom species from the training set the script create_data_set.py can be used. Arguments are number of classes wanted, path to training dataset, path to validation dataset.
 ```bash
