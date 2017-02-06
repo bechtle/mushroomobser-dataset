@@ -13,7 +13,7 @@ The most recent year is always used as test dataset, all the other years as trai
 
 The dataset collected can be downloaded [here](https://www.google.com).
 
-Additionally json files containing additional information about each image can be downloaded [here](https://www.google.com). The json files contain a list of dictionaries, each dictionary contains following information about the image:
+Additionally json files containing additional information about each image can be downloaded [here](https://www.google.com). The json files contain a list of dictionaries, each dictionary contains following information about the image, if image[thumbnail]=1 the image belongs to the clean dataset as well:
 ```python
 {'date': '2006-05-21 07:17:22',
  'gbif_info': {'canonicalName': 'Xerocomells dryophils',
@@ -47,14 +47,14 @@ Additionally json files containing additional information about each image can b
  'user': 1}
 ```
 
-An overview of the taxonomy of the mushroom dataset can be found [here](https://www.google.com).
+The file mushroom_taxonomy.pdf shows an overview of the taxonomy of the mushroom dataset.
 
 ## scrape newest year for test
-To scrape the images from most recent year from [http://mushroomobserver.org](http://mushroomobserver.org) you can run download_images_of_year.py
+To scrape the images from most recent year from [http://mushroomobserver.org](http://mushroomobserver.org) you can run scrape_images_of_year.py
 ```bash
 python download_images_of_year.py year destination_folder
 ```
-you may stop the script as soon as it starts scraping exclusively observations that are older then the desired year.
+you may stop the script with ctrl+C as soon as it starts scraping exclusively observations that are older then the desired year. The script creates a json file with the image information.
 
 ## create species dataset 
 
